@@ -9,6 +9,10 @@ module.exports = defineConfig({
     specPattern: 'cypress/integration/**/*.{js,jsx,ts,tsx}',
     excludeSpecPattern: ['**/1-getting-started/*','**/2-advanced-examples/*']
     
+  },
+  retries: {
+    runMode: 2,
+    openMode: 1
   }
 })
 

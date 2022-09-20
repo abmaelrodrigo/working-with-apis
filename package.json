@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint --force",
     "e2e": "ng e2e",
-    "cypress:run": "npx cypress run",
+    "cypress:run": "CYPRESS_RETRIES=2 npx cypress run",
     "cypress:e2e": "start-test start http-get://localhost:4200 cypress:run"
   },
   "pre-commit": [
