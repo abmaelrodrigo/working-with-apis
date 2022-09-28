@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2022-09-28T00:48:19" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Test with backend" timestamp="2022-09-28T00:48:19" tests="1" time="11.8620" failures="1">
+  
+  <testcase name="Test with backend delete a new article in a global feed" time="4.0250" classname="delete a new article in a global feed">
+    
+    <failure message="`cy.request()` failed on:
+
+https://api.realworld.io/api/articles/
+
+The response we received from your web server was:
+
+  &gt; 401: Unauthorized
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://api.realworld.io/api/articles/
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;Authorization&quot;: &quot;Token &quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.7.0 Chrome/102.0.5005.148 Electron/19.0.8 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 119
+}
+Body: {&quot;article&quot;:{&quot;tagList&quot;:[],&quot;title&quot;:&quot;Request from API&quot;,&quot;description&quot;:&quot;API description from API&quot;,&quot;body&quot;:&quot;Angular is cool&quot;}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 401 - Unauthorized
+Headers: {
+  &quot;date&quot;: &quot;Wed, 28 Sep 2022 00:48:30 GMT&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;content-length&quot;: &quot;64&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;40-MzpzbITdb69gTCj5BHAcyuxi2c0\&quot;&quot;,
+  &quot;via&quot;: &quot;1.1 vegur&quot;,
+  &quot;cf-cache-status&quot;: &quot;DYNAMIC&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RwBApB4NWJumrUpPjmw0AG3QdvZOXL6wJ2%2BURi7OsHm6uL%2FGjPbf6%2B74X2%2B53ZWF5EeiD%2BH5ES1OhdpvMnkwXLhlWeUVrIJA9qLrP%2Bl4gxBG7Cyaz7nIfCoUr0pPzv127zdmXQBY6zJzxOM%2FmDEk\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;,
+  &quot;nel&quot;: &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;7518794d2d32e861-EWR&quot;,
+  &quot;alt-svc&quot;: &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+}
+Body: {
+  &quot;status&quot;: &quot;error&quot;,
+  &quot;message&quot;: &quot;missing authorization credentials&quot;
+}
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://api.realworld.io/api/articles/
+
+The response we received from your web server was:
+
+  > 401: Unauthorized
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://api.realworld.io/api/articles/
+Headers: {
+  "Connection": "keep-alive",
+  "Authorization": "Token ",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.7.0 Chrome/102.0.5005.148 Electron/19.0.8 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 119
+}
+Body: {"article":{"tagList":[],"title":"Request from API","description":"API description from API","body":"Angular is cool"}}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 401 - Unauthorized
+Headers: {
+  "date": "Wed, 28 Sep 2022 00:48:30 GMT",
+  "content-type": "application/json; charset=utf-8",
+  "content-length": "64",
+  "connection": "keep-alive",
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "*",
+  "etag": "W/\"40-MzpzbITdb69gTCj5BHAcyuxi2c0\"",
+  "via": "1.1 vegur",
+  "cf-cache-status": "DYNAMIC",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RwBApB4NWJumrUpPjmw0AG3QdvZOXL6wJ2%2BURi7OsHm6uL%2FGjPbf6%2B74X2%2B53ZWF5EeiD%2BH5ES1OhdpvMnkwXLhlWeUVrIJA9qLrP%2Bl4gxBG7Cyaz7nIfCoUr0pPzv127zdmXQBY6zJzxOM%2FmDEk\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "cf-ray": "7518794d2d32e861-EWR",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+}
+Body: {
+  "status": "error",
+  "message": "missing authorization credentials"
+}
+
+
+https://on.cypress.io/request
+    at http://localhost:4200/__cypress/runner/cypress_runner.js:143948:80
+    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:11318:23)
+    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:9253:31)
+    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:9310:18)
+    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:9355:10)
+    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:9435:18)
+    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:6025:12)
+    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:6018:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:6034:5)
+    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:5904:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/firstTest.spec.js:198:10)]]></failure>
+    
+  </testcase>
+  
+</testsuite>
+
+</testsuites>
